@@ -16,7 +16,7 @@
 
 <div class="titleSection h-[100vh]">
     <div class="flex items-center justify-center h-full w-full">
-        <div class=" w-[60%] h-[75%] border-[4px] bg-[#ffffff53]">
+        <div class=" w-[60%] h-[75%]  bg-[#ffffff53]">
             <div class="w-full h-full grid grid-cols-[50%_auto]">
 
                 <div class="flex items-center justify-center h-full border-r-[2px]">
@@ -26,14 +26,14 @@
                                 <div class="flex flex-col my-2 input-name relative">
                                     <label for="name" class="text-[20px] font-bold">Name:</label>
                                     <div class="input-name relative">
-                                        <input type="text" class="h-[45px] w-full" id="name" bind:value={name} required>
+                                        <input type="text" class="h-[45px] w-full p-3" id="name" bind:value={name} required>
                                         <span class="underline-animation"></span>
                                     </div>
                                 </div>
                                 <div class="flex flex-col my-2 input-name relative">
                                     <label for="email" class="text-[20px] font-bold">Email:</label>
                                     <div class="input-name relative">
-                                        <input type="email" class="h-[45px] w-full" id="email" bind:value={email} required>
+                                        <input type="email" class="h-[45px] w-full p-3" id="email" bind:value={email} required>
                                         <span class="underline-animation"></span>
                                     </div>
                                     
@@ -42,7 +42,7 @@
                                 <div class="flex flex-col my-2 ">
                                     <label for="password" class="text-[20px] font-bold">Password:</label>
                                     <div class="input-name relative">
-                                        <input type="password" class="h-[45px] w-full" id="password" bind:value={password} required>
+                                        <input type="password" class="h-[45px] w-full p-3" id="password" bind:value={password} required>
                                         <span class="underline-animation"></span>
                                     </div>
                                     
