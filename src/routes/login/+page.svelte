@@ -14,13 +14,24 @@
     }
 </script>
 
-<div class="titleSection h-[100vh]">
-    <div class="flex items-center justify-center h-full w-full">
-        <div class=" w-[60%] h-[75%]  bg-[#ffffff53]">
-            <div class="w-full h-full grid grid-cols-[50%_auto]">
+<div class="titleSection md:h-[100vh]">
+    <div class="flex items-center justify-center h-full w-full ">
+        <div class=" md:w-[60%] w-[80%] my-8 md:my-0 md:h-[75%]  bg-[#ffffff53]">
+            <div class="w-full h-full grid md:grid-cols-[50%_auto] ">
 
-                <div class="flex items-center justify-center h-full border-r-[2px]">
-                    <div class="p-5 m-5 ">
+                <div class="">
+                    <div class=" flex items-center justify-center h-full firstAnimation">
+                        <div>
+                            <div class="flex items-center justify-center">
+                                <img src={genie} alt="" class="object-contain w-[100px] md:w-[250px]">
+                            </div>
+                            <p class="text-[45px] md:text-[70px] font-bold md:mt-[-20px] ">ShopGenie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:order-last md:opacity-0 secondAnimation   flex items-center justify-center h-full md:border-r-[2px] ">
+                    <div class=" md:p-5 md:m-5 ">
                         <form on:submit={handleSubmit}>
                             <div class="flex flex-col">
                                 <div class="flex flex-col my-2 input-name relative">
@@ -85,16 +96,9 @@
                     </div>
                     
                 </div>
-                <div>
-                    <div class="flex items-center justify-center h-full">
-                        <div>
-                            <div class="flex items-center justify-center">
-                                <img src={genie} alt="" class="object-contain w-[250px]">
-                            </div>
-                            <p class="text-[70px] font-bold mt-[-20px] ">ShopGenie</p>
-                        </div>
-                    </div>
-                </div>
+
+                
+            
             </div>
         </div>
     </div>
@@ -132,5 +136,38 @@
 	}
 	.input-name > input:focus + .underline-animation{
 	    left: 0;
+	}
+
+
+    @keyframes slideIn {
+		0% {
+		transform: translateX(100%);
+		}
+        50%{
+            transform: translateX(-50%);
+        }
+        
+		100% {
+		transform: translateX(0);
+		}
+	}
+	.firstAnimation {
+		animation: slideIn 2s ease-in-out forwards;
+		
+	}
+
+
+    @keyframes op {
+		0% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+	}
+	.secondAnimation {
+		animation: op 1.5s ease-in-out forwards;
+        animation-delay: 2s;
+		
 	}
 </style>
