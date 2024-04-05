@@ -51,7 +51,7 @@
 	
 	<div class="titleSection">
 	
-		<div class="navbar z-20 fixed">
+		<div class="navbar z-10 fixed">
 					
 			<div class="flex-1">
 				  <a class="btn btn-ghost text-xl" href="/">
@@ -115,7 +115,7 @@
 			</div>
 		</div>
 	
-		<div class="h-[110vh]   bg-[#0cc0df] ">
+		<div class="h-[110vh] relative top-0  bg-[#0cc0df] ">
 			<div class="md:grid lg:grid grid-cols-[50%_auto] h-full">
 				<div class="flex items-center justify-center">
 					<img src={saveTime} alt="" class="h-3/4">
@@ -130,7 +130,7 @@
 			</div>
 		</div>
 
-		<div class="h-[110vh] bg-[#ff5757]   ">
+		<div class="h-[110vh] relative top-0 bg-[#ff5757]   ">
 			<div class="md:grid lg:grid grid-cols-[50%_auto] h-full">
 				
 				<div class="m-4 p-3 flex items-center justify-center">
@@ -151,7 +151,7 @@
 			</div>
 		</div>
 	
-		<div class="h-[110vh] bg-[#D4AFAF]  ">
+		<div class="h-[110vh] relative top-0 bg-[#D4AFAF]  ">
 			<div class="md:grid lg:grid grid-cols-[50%_auto] h-full">
 				<div>
 					<div class="flex items-center justify-center h-[100%]">
